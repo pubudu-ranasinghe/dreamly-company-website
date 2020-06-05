@@ -2,9 +2,13 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-interface Props {}
+interface Props {
+  title: string
+  description?: string
+  meta?: any
+}
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, meta, title }: Props) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -24,7 +28,7 @@ function SEO({ description, lang, meta, title }) {
   return (
     <Helmet
       htmlAttributes={{
-        lang,
+        lang: "ja",
       }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
@@ -61,7 +65,7 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
-      ].concat(meta)}
+      ].concat(meta ? meta : {})}
     />
   )
 }
