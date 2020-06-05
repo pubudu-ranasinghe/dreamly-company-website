@@ -1,6 +1,13 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
+import styled, { css } from "styled-components"
+
+const Wrapper = styled.div(
+  ({ theme }) => css`
+    padding: 1em 0em;
+  `
+)
 
 interface Props {}
 
@@ -21,9 +28,9 @@ const Header = (props: Props) => {
     }
   `)
   return (
-    <div>
+    <Wrapper>
       <Img fixed={data.image.childImageSharp.fixed} alt="ドリームリー" />
-    </div>
+    </Wrapper>
   )
 }
 
