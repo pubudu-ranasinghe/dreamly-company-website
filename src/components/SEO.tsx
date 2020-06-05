@@ -4,8 +4,6 @@ import { useStaticQuery, graphql } from "gatsby"
 
 interface Props {}
 
-//todo set up siteMetadata
-
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
     graphql`
