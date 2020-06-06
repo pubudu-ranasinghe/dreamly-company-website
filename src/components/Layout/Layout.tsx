@@ -3,6 +3,7 @@ import { ThemeProvider } from "styled-components"
 import theme from "../../styles/theme"
 import "../../css/style.css"
 import Header from "./Header"
+import Footer from "./Footer"
 
 interface Props {}
 
@@ -12,6 +13,7 @@ const Layout = (props: any) => {
       <ThemeProvider theme={theme}>
         <Header />
         {props.children}
+        <Footer />
       </ThemeProvider>
     </>
   )

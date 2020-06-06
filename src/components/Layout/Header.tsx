@@ -6,6 +6,12 @@ import styled, { css } from "styled-components"
 const Wrapper = styled.div(
   ({ theme }) => css`
     padding: 1em 0em;
+    @media (min-width: ${theme.range.screen.mobileToTablet}) {
+      /* write style for tablet here */
+    }
+    @media (min-width: ${theme.range.screen.tabletToDesktop}) {
+      /* write style for desktop here */
+    }
   `
 )
 
