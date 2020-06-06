@@ -1,10 +1,10 @@
 import React from "react"
-import Layout from "../components/Layout/Layout"
+import Layout from "../components/views/Layout/Layout"
 import SEO from "../components/SEO"
-import Cover from "../components/home/Cover"
-import DevelopmentProcess from "../components/home/DevelopmentProcess"
-import PartOfKagawa from "../components/home/PartOfKagawa"
-import Projects from "../components/home/Projects"
+import Cover from "../components/views/home/Cover"
+import DevelopmentProcess from "../components/views/home/DevelopmentProcess"
+import PartOfKagawa from "../components/views/home/PartOfKagawa"
+import Projects from "../components/views/home/Projects"
 
 export default function Home() {
   return (
