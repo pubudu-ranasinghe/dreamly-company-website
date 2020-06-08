@@ -4,6 +4,7 @@ import theme from "../../../styles/theme"
 import "../../../css/style.css"
 import Header from "./Header"
 import Footer from "./Footer"
+import 'typeface-varela-round';
 
 interface Props {}
 
