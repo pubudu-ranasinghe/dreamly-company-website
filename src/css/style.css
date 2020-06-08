@@ -116,4 +116,9 @@ body {
   max-width: 1680px;
   margin: auto;
   text-align: center;
+  height: 100%;
+}
+
+html, #___gatsby, #gatsby-focus-wrapper {
+  height: 100%;
 }
