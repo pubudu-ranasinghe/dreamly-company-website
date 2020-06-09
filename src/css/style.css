@@ -111,15 +111,3 @@ video {
   vertical-align: baseline;
   background: transparent;
 }
-
-body {
-  max-width: 1680px;
-  margin: auto;
-  text-align: center;
-  height: 100%;
-  font-family: 'Varela Round',sans-serif
-}
-
-html, #___gatsby, #gatsby-focus-wrapper {
-  height: 100%;
-}
