@@ -11,8 +11,8 @@ export default function Home() {
     <Layout>
       <SEO title="ドリームリー" />
       <Cover />
-      <DevelopmentProcess />
       <PartOfKagawa />
+      <DevelopmentProcess />
       <Projects />
     </Layout>
   )

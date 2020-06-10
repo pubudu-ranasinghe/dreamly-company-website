@@ -111,9 +111,3 @@ video {
   vertical-align: baseline;
   background: transparent;
 }
-
-body {
-  max-width: 1680px;
-  margin: auto;
-  text-align: center;
-}
