@@ -1,14 +1,12 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
-import styled, { css } from "styled-components"
 import Section from "../Layout/Section"
 import Boxes from "../Layout/Boxes"
 
 interface Props {}
 
 const PartOfKagawa = (props: Props) => {
-  
+
   const data = useStaticQuery(graphql`
     query {
       image: file(relativePath: { eq: "icons/award-icon.png" }) {
