@@ -1,12 +1,13 @@
 import React from "react"
+import Section from "../Layout/Section"
 
 interface Props {}
 
 const DevelopmentProcess = (props: Props) => {
   return (
-    <div>
-      <h2>DevelopmentProcess </h2>
-    </div>
+    <Section title="Development process">
+      <p>Content goes here</p>
+    </Section>
   )
 }
 
