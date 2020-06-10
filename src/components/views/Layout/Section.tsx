@@ -19,11 +19,11 @@ const Divider = styled.hr(
 const Section = (props: Props) => {
   return (
     <>
-    <div>
+    <section>
       <Title>{props.title}</Title>
-    </div>
-    <Divider />
-    {props.children}
+      <Divider />
+      {props.children}
+    </section>
     </>
   )
 }
