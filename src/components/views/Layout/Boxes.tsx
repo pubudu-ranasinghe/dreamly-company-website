@@ -11,12 +11,26 @@ const Title = styled.h3(
   `
 )
 
+const Link = styled.a(
+  ({ theme }) => css`
+    color: ${ theme.color.font.secondary };
+    text-decoration: none;
+  `
+)
+
+const Text = styled.p(
+  ({ theme }) => css`
+    color: #545454;
+    font-size: ${ theme.size.font.regular };
+  `
+)
+
 const Container = styled.div(
   ({ theme }) => css`
     display: block;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 4rem;
-    padding: 0 4rem;
+    grid-gap: 2rem;
+    padding: 0 2rem;
     margin: 2rem 0;
     @media (min-width: ${theme.range.screen.mobileToTablet}) {
       display: grid;
@@ -41,9 +55,9 @@ const Boxes = (props: Props) => {
             </a>
             <div>
               <Title>
-                <a href={ item.link }>{ item.title }</a>
+                <Link href={ item.link }>{ item.title }</Link>
               </Title>
-              <p>{ item.text }</p>
+              <Text>{ item.text }</Text>
             </div>
           </div>
         ))}
