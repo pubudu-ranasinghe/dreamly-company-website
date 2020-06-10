@@ -52,7 +52,7 @@ const PartOfKagawa = (props: Props) => {
       icon: data.image.childImageSharp.fixed,
       title: 'Cooperation with HOP',
       text: 'Our staff provides language assistance for a new approach to teaching English',
-      link: 'Our staff provides language assistance for a new approach to teaching English'
+      link: 'https://www.hopforhope.info/'
     },
     {
       icon: data.image.childImageSharp.fixed,
