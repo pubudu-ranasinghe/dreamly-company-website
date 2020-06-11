@@ -3,12 +3,13 @@ import styled, { css } from "styled-components"
 
 interface Props {}
 
-const Title = styled.h2`
-  font-size: 3em;
-  font-weight: 700;
-  margin: 4%;
-`
-
+const Title = styled.h2(
+  ({theme}) => css`
+    font-size: ${theme.size.font.huge};
+    font-weight: 700;
+    margin: 4%;
+  `
+)
 const Divider = styled.hr(
   ({ theme }) => css`
     width: 10%;
@@ -19,11 +20,11 @@ const Divider = styled.hr(
 const Section = (props: Props) => {
   return (
     <>
-    <div>
+    <section>
       <Title>{props.title}</Title>
-    </div>
-    <Divider />
-    {props.children}
+      <Divider />
+      {props.children}
+    </section>
     </>
   )
 }
