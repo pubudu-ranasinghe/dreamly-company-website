@@ -8,6 +8,12 @@ interface Props {}
 const Title = styled.h3(
   ({ theme }) => css`
     font-size: ${theme.size.font.large};
+    margin-bottom: 20px;
+    @media (min-width: ${theme.range.screen.mobileToTablet}) {
+    }
+    @media (min-width: ${theme.range.screen.tabletToDesktop}) {
+      font-size: ${ theme.size.font.huge };
+    }
   `
 )
 
@@ -22,16 +28,28 @@ const Text = styled.p(
   ({ theme }) => css`
     color: #545454;
     font-size: ${ theme.size.font.regular };
+    line-height: 2em;
+  `
+)
+
+const StyledImg = styled(Img)(
+  ({ theme }) => css`
+    width: 16%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 17px;
   `
 )
 
 const Container = styled.div(
   ({ theme }) => css`
-    display: block;
-    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 2rem;
-    padding: 0 2rem;
-    margin: 2rem 0;
+    padding: 0 20px;
+    margin: 2rem auto;
+    max-width: 1200px;
     @media (min-width: ${theme.range.screen.mobileToTablet}) {
       display: grid;
       grid-template-columns: repeat(2, 1fr);

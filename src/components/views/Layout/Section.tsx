@@ -7,7 +7,8 @@ const Title = styled.h2(
   ({theme}) => css`
     font-size: ${theme.size.font.huge};
     font-weight: 700;
-    margin: 4%;
+    padding: 4%;
+    margin-bottom: 20px;
   `
 )
 const Divider = styled.hr(
