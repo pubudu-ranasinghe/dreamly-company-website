@@ -13,12 +13,8 @@ const GlobalStyle = createGlobalStyle`
     max-width: 1680px;
     margin: auto;
     text-align: center;
-    height: 100%;
     font-family: 'Varela Round',sans-serif;
-    color: #000;
-  }
-  html, #___gatsby, #gatsby-focus-wrapper {
-    height: 100%;
+    color: { theme.color.font.secondary };
   }
 `
 
