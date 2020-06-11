@@ -51,7 +51,7 @@ const Boxes = (props: Props) => {
         {props.items.map((item) => (
           <div>
             <a href={ item.link}>
-              <Img fixed={ item.icon } />
+              <StyledImg fluid={ item.icon } />
             </a>
             <div>
               <Title>

@@ -25,26 +25,26 @@ const Projects = (props: Props) => {
 
   const items = [
     {
-      icon: data.image.childImageSharp.fixed,
+      icon: data.image.childImageSharp.fluid,
       title: 'Management & analytical platform for weather data',
       link: 'https://www.kamomeya-inc.com/service/kazamidori/'
     },
     {
-      icon: data.image.childImageSharp.fixed,
+      icon: data.image.childImageSharp.fluid,
       title: 'Remote Control of Digital Billboards',
       link: 'http://www.videolifenext.com/signage/'
     },
     {
-      icon: data.image.childImageSharp.fixed,
+      icon: data.image.childImageSharp.fluid,
       title: 'Platform for Home-visit nursing system',
       link: 'https://www.c-rcs.jp/products/nursing'
     },
     {
-      icon: data.image.childImageSharp.fixed,
+      icon: data.image.childImageSharp.fluid,
       title: 'SNS platform for restaurants',
     },
     {
-      icon: data.image.childImageSharp.fixed,
+      icon: data.image.childImageSharp.fluid,
       title: 'Universal platform for Inbound Tourism',
     },
   ]
