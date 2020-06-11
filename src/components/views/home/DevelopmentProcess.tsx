@@ -97,12 +97,32 @@ const DevelopmentProcess = (props: Props) => {
         <StyledP>Dreamly is focused on agile development, not on waterfall development which is common in Japanese companies.</StyledP>
         <StyledP>Each approach has advantages and disadvantages.</StyledP>
 
-        <StyledImg fluid={ data.image.childImageSharp.fluid } />
-        <StyledImg fluid={ data.image2.childImageSharp.fluid } />
-
+        <div
+        data-sal="slide-right"
+        data-sal-delay="100"
+        data-sal-easing="ease"
+        data-sal-duration="1250"
+        >
+          <StyledImg
+            fluid={ data.image.childImageSharp.fluid }
+          />
+        </div>
+        <div
+        data-sal="slide-right"
+        data-sal-delay="100"
+        data-sal-easing="ease"
+        data-sal-duration="1250"
+        >
+          <StyledImg fluid={ data.image2.childImageSharp.fluid } />
+        </div>
         <StyledH3>Advantages of Agile development</StyledH3>
 
-        <Ul>
+        <Ul
+          data-sal="slide-up"
+          data-sal-delay="100"
+          data-sal-easing="ease"
+          data-sal-duration="1250"
+        >
           <li>Can flexibly respond to changes in projects where specifications are likely to change or add</li>
           <li>Short delivery time and start business in a short time</li>
           <li>Helps discover potential needs of users</li>

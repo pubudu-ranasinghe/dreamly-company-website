@@ -67,7 +67,12 @@ const Boxes = (props: Props) => {
     <>
       <Container>
         {props.items.map((item) => (
-          <div>
+          <div
+            data-sal="slide-up"
+            data-sal-delay="100"
+            data-sal-easing="ease"
+            data-sal-duration="1250"
+          >
             <a href={ item.link}>
               <StyledImg fluid={ item.icon } />
             </a>

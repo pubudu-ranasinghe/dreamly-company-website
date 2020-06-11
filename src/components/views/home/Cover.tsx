@@ -59,7 +59,12 @@ const Cover = ({ className }) => (
           fluid={imageData}
           backgroundColor={`#040e18`}
         >
-          <Wrapper>
+          <Wrapper
+            data-sal="slide-up"
+            data-sal-delay="100"
+            data-sal-easing="ease"
+            data-sal-duration="1250"
+          >
             <Title>
               Dreamly is an international team bringing state of the art IT skills to Kagawa.
             </Title>
