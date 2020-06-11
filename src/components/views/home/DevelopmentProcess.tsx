@@ -52,7 +52,7 @@ const DevelopmentProcess = (props: Props) => {
   `)
 
   return (
-    <Section title="Development process">
+    <Section title="Development process" grey >
     <Wrapper>
         <p>Dreamly is focused on agile development, not on waterfall development which is common in Japanese companies.</p>
         <p>Each approach has advantages and disadvantages.</p>
@@ -61,7 +61,7 @@ const DevelopmentProcess = (props: Props) => {
         <Img fluid={ data.image2.childImageSharp.fluid } />
 
         <StyledH3>Advantages of Agile development</StyledH3>
-        
+
         <ol>
           <li>Can flexibly respond to changes in projects where specifications are likely to change or add</li>
           <li>Short delivery time and start business in a short time</li>

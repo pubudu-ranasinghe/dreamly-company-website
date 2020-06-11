@@ -19,13 +19,19 @@ const Divider = styled.hr(
 )
 
 const Section = (props: Props) => {
+
+  const StyledSection = styled.section(
+    ({ theme }) => css`
+      background-color: ${props.grey ? '#f4f4f7' : 'inherit'};
+    `
+  )
   return (
     <>
-    <section>
+    <StyledSection>
       <Title>{props.title}</Title>
       <Divider />
       {props.children}
-    </section>
+    </StyledSection>
     </>
   )
 }
