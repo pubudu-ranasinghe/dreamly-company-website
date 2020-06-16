@@ -6,6 +6,7 @@ import MoreButton from "../components/views/Layout/MoreButton"
 import DevelopmentProcess from "../components/views/home/DevelopmentProcess"
 import PartOfKagawa from "../components/views/home/PartOfKagawa"
 import Projects from "../components/views/home/Projects"
+import "custom-event-polyfill"
 
 export default function Home() {
   return (
