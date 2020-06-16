@@ -42,24 +42,26 @@ const StyledImg = styled(Img)(
   `
 )
 
-const Container = styled.div(
-  ({ theme }) => css`
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 2rem;
-    padding: 0 20px;
-    margin: 2rem auto;
-    max-width: 1200px;
-    @media (min-width: ${theme.range.screen.mobileToTablet}) {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    @media (min-width: ${theme.range.screen.tabletToDesktop}) {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-    }
-  `
-)
+// const Container = styled.div(
+//   ({ theme }) => css`
+//     display: grid;
+//     grid-template-columns: repeat(1, 1fr);
+//     grid-gap: 2rem;
+//     padding: 0 20px;
+//     margin: 2rem auto;
+//     max-width: 1200px;
+//     @media (min-width: ${theme.range.screen.mobileToTablet}) {
+//       display: grid;
+//       grid-template-columns: repeat(2, 1fr);
+//     }
+//     @media (min-width: ${theme.range.screen.tabletToDesktop}) {
+//       display: grid;
+//       grid-template-columns: repeat(3, 1fr);
+//     }
+//   `
+// )
+
+const Container = (props: Props) => <div className="box-inner-container">{props.children}</div>
 
 const Boxes = (props: Props) => {
 

@@ -111,3 +111,28 @@ video {
   vertical-align: baseline;
   background: transparent;
 }
+
+.box-inner-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 2rem;
+    padding: 0 20px;
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+@media (min-width: 544px) {
+  .box-inner-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1104px) {
+  .box-inner-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
